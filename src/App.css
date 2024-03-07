@@ -1,38 +1,139 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+body {
+  background-image: url('./bg.jpg');
+  font-family: "Roboto", sans-serif;
+  padding-top: 20px; /* Adjust as needed */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.container {
+  max-width: 800px; /* Adjust max-width as needed */
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.watch {
+  margin-bottom: 20px;
+}
+
+.outer-box {
+  width: 100%;
+  max-width: 500px;
+  height: 300px;
+  border-radius: 5%;
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner-box {
+  width: 100%;
+  max-width: 480px;
+  height: 280px;
+  border-radius: 5%;
+  background-color: blue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.min {
+  font-size: 4vw;
+}
+
+.sec {
+  font-size: 3.5vw;
+}
+
+.msec {
+  font-size: 2.5vw; 
+}
+
+.buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  font: inherit;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #351919;
+}
+
+.laps {
+  list-style: none;
+  max-height: 200px; 
+  overflow: auto;
+  padding: 0 10px;
+  margin-top: 20px;
+}
+
+.lap-item {
+  padding: 10px;
+  text-align: center;
+  background-color: transparent;
+  border: 1px solid #979393;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+.clearbtn {
+  width: 100px;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  padding: 10px 0;
+  cursor: pointer;
+  border-radius: 30px;
+  font-size: 16px;
+}
+
+.clearbtn:hover {
+  background-color: #351919;
+}
+
+.visibility {
+  visibility: hidden;
+}
+
+@media screen and (max-width: 600px) {
+  .min {
+    font-size: 6vw;
   }
-  to {
-    transform: rotate(360deg);
+
+  .sec {
+    font-size: 5vw;
+  }
+
+  .msec {
+    font-size: 4vw;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .min {
+    font-size: 8vw;
+  }
+
+  .sec {
+    font-size: 7vw;
+  }
+
+  .msec {
+    font-size: 6vw;
   }
 }
